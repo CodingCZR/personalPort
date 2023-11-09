@@ -1,4 +1,5 @@
 const observer = new IntersectionObserver((entries) => {
+
   entries.forEach((entry) => {
        console.log(entry)
 
@@ -7,6 +8,7 @@ const observer = new IntersectionObserver((entries) => {
         } else {
         entry.target.classList.remove('show');
        }
+       
   });
 });
 
